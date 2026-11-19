@@ -25,6 +25,9 @@ section{display:flex;flex-direction:column;gap:24px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:8px}
 .tag{font-size:13px;font-weight:600;color:var(--accent)}
+.shot{display:block;margin-top:8px}
+.shot img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line);display:block}
+.hint{font-size:13px;margin-top:4px}
 a.link{color:var(--accent);font-weight:600}
 .contact{background:var(--dark);color:var(--dark-ink);border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:12px}
 .contact p{color:inherit;opacity:.85}
@@ -58,8 +61,8 @@ footer{text-align:center;padding:0 24px 40px;color:var(--muted);font-size:14px}
 <h2>Sample work</h2>
 <p>The two automations below are built with test data, so you can see how they would work for your store.</p>
 <div class="grid">
-<div class="card"><div class="tag">Make.com, Google Sheets, Gmail</div><h3>Order confirmation emails</h3><p>When a new row is added to the orders sheet, the customer receives a confirmation email with their name and order.</p></div>
-<div class="card"><div class="tag">Make.com, Google Sheets, Gmail</div><h3>Daily sales report</h3><p>Reads the sales sheet, adds up the amounts and emails the total on a daily schedule.</p></div>
+<div class="card"><div class="tag">Make.com, Google Sheets, Gmail</div><h3>Order confirmation emails</h3><p>When a new row is added to the orders sheet, the customer receives a confirmation email with their name and order.</p><a class="shot" href="order-automation.png"><img src="order-automation.png" alt="Make.com scenario: Google Sheets Watch New Rows connected to Gmail Send an email"></a><span class="hint">Click the image to enlarge</span></div>
+<div class="card"><div class="tag">Make.com, Google Sheets, Gmail</div><h3>Daily sales report</h3><p>Reads the sales sheet, adds up the amounts and emails the total on a daily schedule.</p><a class="shot" href="daily-sales-report.png"><img src="daily-sales-report.png" alt="Make.com scenario: Google Sheets Search Rows, Numeric aggregator, Gmail Send an email, scheduled daily"></a><span class="hint">Click the image to enlarge</span></div>
 <div class="card"><div class="tag">Python, TensorFlow, OpenCV, Flask</div><h3>Brain tumor detection and segmentation</h3><p>Final year project. Deep learning models trained on 5,000+ labeled MRI scans and evaluated with accuracy, precision, recall and IoU.</p><a class="link" href="https://github.com/hussainalisyed057-engr">See the code on GitHub</a></div>
 </div>
 </section>
